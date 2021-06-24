@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+    <title>Simon dice!</title>
+</head>
+<body>
+    <style>
+        .hide {
+            display: none;
+        }
+        .celeste.light {
+            background-color: #7ed6df;
+        }
+        .violeta.light {
+            background-color: #e056fd;
+        }
+        .naranja.light {
+            background-color: #ffbe76;
+        }
+        .verde.light {
+            background-color: #badc58;
+        }
+    </style>
+    <main>
+        <section  class="gameboard">
+            <div id="celeste" class="color celeste" data-color="celeste"></div>
+            <div id="violeta" class="color violeta" data-color="violeta"></div>
+            <div id="naranja" class="color naranja" data-color="naranja"></div>
+            <div id="verde" class="color verde" data-color="verde"></div>
+            <button id="btn-empezar" class="btn-start" onclick="startGame()">Start game!</button>
+        </section>
+    </main>
+    <script src="./accions.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>const var y let</title>
+</head>
+<body>
+    <script>
+        var sacha = {
+            nombre: 'Sancha',
+            apellido: 'Lifzyic',
+            edad: 28
+        }
+
+        function esMayorDeEdad(persona) {
+            let mensaje
+            const MAYORIA_EDAD = 18
+            if (persona > MAYORIA_EDAD) {
+                mensaje = 'Es mayor de edad'
+            } else {
+                mensaje = 'Es menor de edad'
+            }
+            console.log(mensaje)
+        }
+
+        // esMayorDeEdad(sacha.edad)
+
+        const numeros = [1, 2, 3, 4, 5, 6, 7]
+        // const numeros = [1, 2] //INCORRECTO REASIGNAR VALOR
+        numeros.push(8) // pero SE PUEDE MODIFICAR CON la funcion PUSH
+        // numeros = [1, 2, 3, 4, 5, 6, 7, 8]
+
+        for (let i = 0; i < 10; i++) {
+            console.log(i) 
+        }
+
+        // console.log(`el valor de i es ${i}`)
+
+    </script>
+</body>
+</html>

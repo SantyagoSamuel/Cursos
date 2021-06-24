@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuando usar un punto y coma</title>
+</head>
+<body>
+    <script>
+        //Uno de los casos en donde debemos usar punto y coma es el siguiente:
+        console.log('hola mundo')
+        ;[1,2,3].forEach(n => console.log(n * 2)) //Cuando despues de una linea de codigo se escribe un ARRAY
+
+        
+        //El segundo case es el siguiente
+        const nombre = 'sacha'
+        console.log('hola mundo');
+        `${nombre} es un desarrollador` //Cuando acontinuacion de una linea de codigo va una interpolacion
+
+        function calcularDoble(numero) {
+            return {
+                original: numero, doble: numero * 2
+            }
+        }
+    </script>
+</body>
+</html>

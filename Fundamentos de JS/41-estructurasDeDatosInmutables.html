@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructuras de Datos Inmutables</title>
+</head>
+<body>
+    <script>
+
+        const sacha = {
+            nombre: 'Sacha',
+            apellido: 'Lifzsic',
+            edad: 28
+        }
+
+        // const cumpleaños = persona => persona.edad++
+        const cumpleañosInmutable = persona => ({
+            ...persona,
+            edad: persona.edad + 1
+        })
+
+        const sacha29 = cumpleañosInmutable(sacha)
+        const sacha30 = cumpleañosInmutable(sacha29)
+        const sacha31 = cumpleañosInmutable(sacha30)
+        //sacha.edad: 28
+
+    </script>
+</body>
+</html>
